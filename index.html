@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electricista Eutiquio Ortega | Servicio Eléctrico Residencial, Comercial e Industrial 24/7</title>
+  <meta name="description" content="Electricista Eutiquio Ortega: instalaciones y emergencias eléctricas las 24 horas. Cargadores para auto eléctrico, acometidas y medidores CFE, subestaciones, automatización, bobinado de motores y trámites CFE-SENER.">
+  <meta name="keywords" content="electricista, instalaciones eléctricas, acometidas CFE, subestaciones eléctricas, cargador para auto eléctrico, bobinado de motores, automatización industrial, cerco eléctrico, electricista residencial, electricista comercial, electricista industrial, trámites SENER UVIE">
+  <meta property="og:title" content="Electricista Eutiquio Ortega | Servicio Eléctrico 24/7">
+  <meta property="og:description" content="Instalaciones, mantenimiento y emergencias eléctricas residenciales, comerciales e industriales. Cargadores EV, subestaciones, automatización y trámites CFE-SENER.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon: rayo ámbar sobre fondo oscuro (marca propia, sin dependencias externas) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0d13'/%3E%3Cpath d='M35 8 14 36h13l-4 20 23-30H33z' fill='%23ffb400'/%3E%3C/svg%3E">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       LOADER
+  ══════════════════════════════════════════════════════ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-bulb">
+      <i class="fa-solid fa-bolt"></i>
+    </div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    <span class="loader-text">Conectando...</span>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <div class="container">
+      <div class="nav-inner">
+
+        <a href="#hero" class="nav-logo" aria-label="Electricista Eutiquio Ortega — inicio">
+          <div class="nav-logo-icon" aria-hidden="true">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <div class="nav-logo-copy">
+            <span>Eutiquio Ortega</span>
+            <span>Electricista</span>
+          </div>
+        </a>
+
+        <nav aria-label="Navegación principal">
+          <ul class="nav-links">
+            <li><a href="#why">Ventajas</a></li>
+            <li><a href="#ambientes">Servicios</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#producto">Automatización</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a href="#contacto" class="btn-gold nav-cta" style="font-size:13px; padding:12px 26px;">
+          Solicitar Cotización
+        </a>
+
+        <button class="hamburger" id="hamburger"
+                aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mob-menu" aria-label="Menú móvil">
+      <a href="#why">Ventajas</a>
+      <a href="#ambientes">Servicios</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#producto">Automatización</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#contacto">Solicitar Cotización →</a>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════════ -->
+  <main>
+    <section id="hero" aria-labelledby="hero-heading">
+
+      <!-- Parallax background image (fixed) -->
+      <div class="hero-bg" aria-hidden="true"></div>
+      <!-- Dark overlays -->
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <!-- Grid texture -->
+      <div class="hero-grid" aria-hidden="true"></div>
+      <!-- Canvas particle orbs -->
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <!-- Light shafts -->
+      <div class="hero-rays" aria-hidden="true">
+        <div class="hero-ray r1"></div>
+        <div class="hero-ray r2"></div>
+        <div class="hero-ray r3"></div>
+        <div class="hero-ray r4"></div>
+        <div class="hero-ray r5"></div>
+      </div>
+      <!-- Film grain overlay -->
+      <div class="hero-grain" aria-hidden="true"></div>
+      <!-- One-shot scan reveal -->
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+
+          <!-- Live badge -->
+          <div class="hero-badge" id="hero-badge" aria-hidden="true">
+            <div class="badge-dot"></div>
+            Emergencias 24/7 · Residencial · Comercial · Industrial
+          </div>
+
+          <!-- Animated title -->
+          <h1 class="hero-title" id="hero-heading">
+            <span class="line"><span>Electricidad que</span></span>
+            <span class="line"><span>nunca te deja</span></span>
+            <span class="line"><span class="accent">a oscuras.</span></span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="hero-sub" id="hero-sub">
+            Instalaciones, mantenimiento y <strong>emergencias eléctricas las 24 horas</strong> para hogares, comercios e industrias. Un solo electricista para todo: desde el cargador de tu auto eléctrico hasta la subestación de tu planta, con los trámites ante CFE y SENER incluidos.
+          </p>
+
+          <!-- CTAs -->
+          <div class="hero-ctas" id="hero-ctas">
+            <a href="#contacto" class="btn-gold">
+              Solicitar Cotización
+              <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
+            </a>
+            <a href="#ambientes" class="btn-outline">
+              <i class="fa-solid fa-bolt" style="font-size:15px; color:var(--gray);"></i>
+              Ver Servicios
+            </a>
+          </div>
+
+          <!-- Trust bar -->
+          <div class="hero-trust" id="hero-trust" aria-label="Credenciales">
+            <div class="trust-item">
+              <i class="fa-solid fa-shield-halved"></i>
+              Trámites CFE y SENER (UVIE)
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-bolt"></i>
+              Media tensión 15 / 23 / 33 kV
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-location-dot"></i>
+              [Ciudad, Estado]
+            </div>
+          </div>
+
+        </div><!-- /.hero-content -->
+      </div>
+
+      <!-- Scroll cue -->
+      <div class="scroll-cue" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-mouse-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MARQUEE
+    ══════════════════════════════════════════════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-inner" id="marquee"></div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         WHY — Ventajas (sin imagen de fondo)
+    ══════════════════════════════════════════════════ -->
+    <section id="why" aria-labelledby="why-heading">
+      <div class="container">
+
+        <div class="why-header">
+          <div class="reveal">
+            <div class="label">Por qué elegirnos</div>
+            <h2 class="why-quote" id="why-heading">
+              La electricidad no perdona errores…
+              <em> por eso cada instalación se hace con precisión certificada.</em>
+            </h2>
+          </div>
+          <p class="why-sub reveal d2">
+            Combinamos experiencia de campo con conocimiento normativo para entregar instalaciones seguras, eficientes y en regla ante CFE y SENER.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="f-card reveal">
+            <div class="f-num" aria-hidden="true">01</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <h3>Servicio 24/7 de Emergencia</h3>
+            <p>Fallas, cortos o apagones no avisan. Atendemos emergencias eléctricas residenciales, comerciales e industriales a cualquier hora, cualquier día.</p>
+          </div>
+
+          <div class="f-card reveal d1">
+            <div class="f-num" aria-hidden="true">02</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-industry"></i>
+            </div>
+            <h3>Residencial, Comercial e Industrial</h3>
+            <p>Desde el medidor de tu casa hasta la subestación de tu planta: un solo equipo capacitado para cada nivel de complejidad.</p>
+          </div>
+
+          <div class="f-card reveal d2">
+            <div class="f-num" aria-hidden="true">03</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+            <h3>Tecnología de Vanguardia</h3>
+            <p>Automatización, alumbrado LED-WiFi de última generación y cerco eléctrico con alarma para modernizar y proteger tu propiedad.</p>
+          </div>
+
+          <div class="f-card reveal d3">
+            <div class="f-num" aria-hidden="true">04</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-file-shield"></i>
+            </div>
+            <h3>Trámites CFE y SENER Incluidos</h3>
+            <p>Gestionamos acometidas, medidores y trámites oficiales (UVIE) para que tu instalación quede 100% en regla.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         AMBIENTES → Ámbitos de servicio (con imágenes)
+    ══════════════════════════════════════════════════ -->
+    <section id="ambientes" aria-labelledby="amb-heading">
+      <div class="container">
+
+        <div class="ambientes-top">
+          <div class="reveal">
+            <div class="label">Ámbitos de Servicio</div>
+            <h2 class="section-title" id="amb-heading">
+              Un electricista para cada nivel<br>
+              <span class="gold">de exigencia</span>
+            </h2>
+            <p style="color:var(--gray); margin-top:16px; font-size:15.5px; max-width:440px; line-height:1.7;">
+              Residencial, comercial o industrial: la solución se adapta al contexto y a la normativa vigente.
+            </p>
+          </div>
+          <div class="reveal d2">
+            <span class="ambiente-pill">¿Cuál necesitas?</span>
+          </div>
+        </div>
+
+        <div class="ambientes-grid">
+
+          <!-- Residencial -->
+          <div class="amb-card reveal">
+            <img class="amb-img"
+              src="img/medidores-cfe-residencial.jpg"
+              alt="Banco de medidores CFE en instalación residencial">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(255,180,0,0.15); border-color:rgba(255,180,0,0.4);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-house-chimney" style="color:var(--gold-2);"></i>
+              </div>
+              <h3>Residencial</h3>
+              <p>Preparación para medidores CFE, acometidas monofásicas y bifásicas, cargador para tu auto eléctrico y mantenimiento eléctrico integral de tu hogar.</p>
+              <div class="amb-temp">Hogares y Condominios</div>
+            </div>
+          </div>
+
+          <!-- Comercial -->
+          <div class="amb-card reveal d1">
+            <img class="amb-img"
+              src="img/electricista-comercial-tablero.jpg"
+              alt="Técnicos electricistas revisando tableros de distribución en instalación comercial">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.3);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-store" style="color:white;"></i>
+              </div>
+              <h3>Comercial</h3>
+              <p>Tableros y cuadros de distribución, alumbrado LED automatizado y cerco eléctrico con alarma para negocios, oficinas y locales.</p>
+              <div class="amb-temp">Negocios y Oficinas</div>
+            </div>
+          </div>
+
+          <!-- Industrial -->
+          <div class="amb-card reveal d2">
+            <img class="amb-img"
+              src="img/subestacion-industrial.jpg"
+              alt="Sala de tableros eléctricos industriales con señalización de seguridad">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(46,161,255,0.15); border-color:rgba(46,161,255,0.4);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-bolt" style="color:var(--blue);"></i>
+              </div>
+              <h3>Industrial</h3>
+              <p>Subestaciones, bancos de capacitores, arrancadores, variadores de frecuencia y cableado de media tensión (15, 23 y 33 kV).</p>
+              <div class="amb-temp">Plantas y Naves Industriales</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PROCESO — Cómo trabajamos (sin fondo)
+    ══════════════════════════════════════════════════ -->
+    <section id="proceso" aria-labelledby="proceso-heading">
+      <div class="container">
+
+        <div class="proceso-header reveal">
+          <div class="label">Cómo trabajamos</div>
+          <h2 class="section-title" id="proceso-heading">
+            Simple, seguro y <span class="gold">documentado</span>
+          </h2>
+          <p>De la primera llamada al último trámite ante CFE, acompañamos cada etapa del proyecto.</p>
+        </div>
+
+        <div class="proceso-grid">
+
+          <div class="proceso-step reveal">
+            <div class="step-number">Paso 01</div>
+            <h3>Diagnóstico en Sitio</h3>
+            <p>Evaluamos la instalación, medimos cargas y detectamos riesgos antes de proponer cualquier solución.</p>
+          </div>
+
+          <div class="proceso-step reveal d1">
+            <div class="step-number">Paso 02</div>
+            <h3>Cotización y Trámites</h3>
+            <p>Te entregamos una cotización clara. Si el proyecto lo requiere, gestionamos los trámites ante CFE y SENER (UVIE).</p>
+          </div>
+
+          <div class="proceso-step reveal d2">
+            <div class="step-number">Paso 03</div>
+            <h3>Ejecución y Pruebas</h3>
+            <p>Instalamos, cableamos y realizamos pruebas eléctricas de campo para garantizar que todo funcione — y siga funcionando.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SERVICIO ESTRELLA — Automatización (con imagen)
+    ══════════════════════════════════════════════════ -->
+    <section id="producto" aria-labelledby="prod-heading">
+      <div class="container">
+        <div class="producto-wrap">
+
+          <!-- Info -->
+          <div class="reveal">
+            <div class="label">Servicio Estrella</div>
+            <h2 class="section-title" id="prod-heading">
+              Automatización y control<br>
+              <span class="gold">a la medida de tu proceso</span>
+            </h2>
+            <p class="producto-lead">
+              Diseñamos y cableamos sistemas de automatización, arrancadores y variadores de frecuencia para que tus procesos operen con precisión y menor consumo energético.
+            </p>
+
+            <ul class="feature-rows" aria-label="Características del servicio de automatización">
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-sliders"></i></div>
+                <div>
+                  <h4>Arrancadores y Variadores de Frecuencia</h4>
+                  <p>Control preciso de motores para procesos residenciales, comerciales e industriales.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-bolt"></i></div>
+                <div>
+                  <h4>Protectores de Fase</h4>
+                  <p>Protegemos tus equipos contra variaciones y fallas de fase que dañan motores y maquinaria.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-layer-group"></i></div>
+                <div>
+                  <h4>Banco de Capacitores y Resistencias</h4>
+                  <p>Corregimos el factor de potencia y optimizamos el consumo eléctrico de tu instalación.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-wrench"></i></div>
+                <div>
+                  <h4>Diseño de Sistemas de Automatización</h4>
+                  <p>Cableado y programación de automatización para diversas variables de proceso.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="specs-bar" role="list" aria-label="Datos del servicio">
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">15–33 kV</span>
+                <span class="spec-name">Cableado M.T.</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">24/7</span>
+                <span class="spec-name">Disponibilidad</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">CFE / SENER</span>
+                <span class="spec-name">Trámites</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">UVIE</span>
+                <span class="spec-name">Certificación</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual -->
+          <div class="reveal d2">
+            <div class="panel-scene">
+              <div class="led-panel-body"
+                   role="img" aria-label="Cableado de arrancadores y contactores para automatización industrial">
+              </div>
+              <div class="p-badge pb-tl" aria-hidden="true">
+                <div class="p-badge-dot"></div>
+                Automatización Industrial
+              </div>
+              <div class="p-badge pb-br" aria-hidden="true">
+                <i class="fa-solid fa-bolt" style="color:var(--gold);"></i>
+                Arrancadores · Variadores
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         STATS (sin fondo)
+    ══════════════════════════════════════════════════ -->
+    <section id="stats" aria-label="Datos clave del servicio">
+      <div class="container">
+        <div class="stats-grid reveal" role="list">
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="24" data-suffix="/7"
+                 aria-label="24/7">0</div>
+            <div class="stat-lbl">Atención de<br>emergencias</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="3" data-suffix=""
+                 aria-label="3 sectores">0</div>
+            <div class="stat-lbl">Sectores atendidos:<br>residencial, comercial e industrial</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="33" data-suffix=" kV"
+                 aria-label="33 kV">0</div>
+            <div class="stat-lbl">Cableado de<br>media tensión</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="2" data-suffix=""
+                 aria-label="2 dependencias">0</div>
+            <div class="stat-lbl">Trámites gestionados:<br>CFE y SENER</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         BANNER — Reparación de transformadores (con fondo)
+    ══════════════════════════════════════════════════ -->
+    <section id="banner-repair" aria-labelledby="banner-heading">
+      <div class="banner-repair-wrap">
+        <div class="container">
+          <div class="banner-content reveal">
+            <div class="label">Reparación Especializada</div>
+            <h2 class="section-title" id="banner-heading">
+              Reparación de transformadores<br>
+              <span class="gold">y bobinado de motores</span>
+            </h2>
+            <p>Cuando un motor o transformador falla, cada hora de paro cuesta. Diagnosticamos, reparamos y rebobinamos con pruebas eléctricas de campo que garantizan que tu equipo vuelva a operar con seguridad.</p>
+            <a href="#contacto" class="btn-gold">
+              Reportar una Falla
+              <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SECTORES (sin fondo)
+    ══════════════════════════════════════════════════ -->
+    <section id="sectores" aria-labelledby="sec-heading">
+      <div class="container">
+
+        <div class="sectores-hdr reveal">
+          <div class="label">Sectores</div>
+          <h2 class="section-title" id="sec-heading">
+            Ideal para <span class="gold">cada contexto</span>
+          </h2>
+          <p>Desde hogares hasta plantas industriales, tenemos el servicio adecuado.</p>
+        </div>
+
+        <div class="sectores-grid" role="list">
+          <div class="sector-card reveal" role="listitem">
+            <i class="fa-solid fa-house sector-icon" aria-hidden="true"></i>
+            <h3>Hogares</h3>
+          </div>
+          <div class="sector-card reveal d1" role="listitem">
+            <i class="fa-solid fa-store sector-icon" aria-hidden="true"></i>
+            <h3>Comercios y Oficinas</h3>
+          </div>
+          <div class="sector-card reveal d2" role="listitem">
+            <i class="fa-solid fa-industry sector-icon" aria-hidden="true"></i>
+            <h3>Naves Industriales</h3>
+          </div>
+          <div class="sector-card reveal d3" role="listitem">
+            <i class="fa-solid fa-charging-station sector-icon" aria-hidden="true"></i>
+            <h3>Subestaciones y CFE</h3>
+          </div>
+          <div class="sector-card reveal d4" role="listitem">
+            <i class="fa-solid fa-water sector-icon" aria-hidden="true"></i>
+            <h3>Pozos y Bombeo</h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CONTACTO (con imagen de fondo)
+    ══════════════════════════════════════════════════ -->
+    <section id="contacto" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="contact-hdr reveal">
+          <div class="label">Contacto</div>
+          <h2 class="section-title" id="contact-heading">
+            Hablemos de <span class="gold">tu instalación</span>
+          </h2>
+          <p>Cuéntanos qué necesitas y te respondemos con una cotización clara. Atendemos emergencias las 24 horas.</p>
+        </div>
+
+        <div class="contact-box reveal">
+
+          <!-- Info panel -->
+          <div class="contact-info">
+            <h3>Atención Directa y Personalizada</h3>
+            <p class="ci-sub">Un solo electricista, todos los niveles de servicio y trámites en un mismo lugar.</p>
+
+            <ul class="ci-list">
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Zona de Cobertura</h4>
+                  <p>[Ciudad, Estado]<br>y alrededores.</p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Teléfono</h4>
+                  <p>
+                    <!-- TODO: sustituir por el teléfono real del negocio -->
+                    <a href="#">[Tu número de teléfono]</a>
+                  </p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>WhatsApp</h4>
+                  <p>Escríbenos y cotizamos en minutos, disponible 24/7.</p>
+                  <!-- TODO: sustituir por el enlace real de WhatsApp del negocio -->
+                  <a href="#" class="ci-wa-link">
+                    [Configurar WhatsApp] →
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div><!-- /.contact-info -->
+
+          <!-- Form -->
+          <div class="contact-form-wrap">
+            <h3>Solicitar Cotización</h3>
+            <form id="wa-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="f-name">Nombre completo</label>
+                  <input type="text" id="f-name" class="form-control"
+                         placeholder="Ej. Nombre Apellido" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="f-interest">¿Qué necesitas?</label>
+                  <select id="f-interest" class="form-control">
+                    <option>Cotización general</option>
+                    <option>Emergencia 24/7</option>
+                    <option>Cargador para auto eléctrico</option>
+                    <option>Acometida / Medidor CFE</option>
+                    <option>Subestación / Industrial</option>
+                    <option>Automatización</option>
+                    <option>Cerco eléctrico</option>
+                    <option>Reparación de transformador o motor</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-msg">Detalle del proyecto</label>
+                <textarea id="f-msg" class="form-control" rows="4" required
+                          placeholder="Describe la instalación, el problema o cualquier detalle relevante…"></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                <i class="fa-brands fa-whatsapp"></i>
+                Solicitar Cotización por WhatsApp
+              </button>
+              <p class="form-note">
+                Al enviar serás redirigido a WhatsApp con tu solicitud ya redactada.
+              </p>
+            </form>
+          </div>
+
+        </div><!-- /.contact-box -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <i class="fa-solid fa-bolt"></i>
+          <span>Eutiquio Ortega Electricista</span>
+        </div>
+        <p class="footer-copy">
+          &copy; <span id="year"></span> Electricista Eutiquio Ortega. Todos los derechos reservados. [Ciudad, Estado].
+        </p>
+        <div class="footer-socials">
+          <!-- TODO: sustituir por el enlace real de WhatsApp del negocio -->
+          <a href="#" class="footer-soc" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════
+       FLOATING WHATSAPP
+  ══════════════════════════════════════════════════════ -->
+  <!-- TODO: sustituir "521XXXXXXXXXX" por el número real de WhatsApp -->
+  <a href="https://wa.me/521XXXXXXXXXX?text=Hola%2C%20visit%C3%A9%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios%20el%C3%A9ctricos."
+     target="_blank" rel="noopener noreferrer"
+     class="wa-btn" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
